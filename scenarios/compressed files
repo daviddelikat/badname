@@ -4,7 +4,7 @@ archive.  single files get analyzed to identify the primary file content
 and re-classified.  archives are identified and re-classified as containers.
 
 excessively large archives (E.L.A.) will be indexed and maintained as-is.
-moderate archives will be extracted and maintained as a folder-container
+normal archives will be extracted and maintained as a folder-container
     this will allow the system to choose an appropriate archival tool
     based on performance and overall preferences.
 

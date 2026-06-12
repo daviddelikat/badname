@@ -1,0 +1,12 @@
+
+the general container asset is a real asset which contains individual assets.
+
+the container has an index and can restrict access to assets it contains.
+
+system handling of containers will keep them compressed on storage devices.
+when jobs request a container item for processing the system will use a
+container process to validate access before copying the item out to the job
+storage area.
+
+containers will also have features to select preferred compression, encryption
+and other mechanisms specific to handling their contents.
