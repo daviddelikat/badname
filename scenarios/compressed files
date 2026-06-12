@@ -1,0 +1,16 @@
+
+compressed files are split into 2 types, single file compressed and
+archive.  single files get analyzed to identify the primary file content
+and re-classified.  archives are identified and re-classified as containers.
+
+excessively large archives (E.L.A.) will be indexed and maintained as-is.
+moderate archives will be extracted and maintained as a folder-container
+    this will allow the system to choose an appropriate archival tool
+    based on performance and overall preferences.
+
+the expectation for E.L.A.s is that the contents will be extracted into
+more unit sized containers and once all data is processed the E.L.A. will
+be purged.
+
+identifying E.L.A.s will be based on actual size and some other properties
+like complexity of structure of the contents.

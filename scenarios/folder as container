@@ -1,0 +1,21 @@
+
+any folder can become a container for files
+
+create the meta-dir (...) and add an id
+
+the container can now be used to run tasks
+data will be synced with storage services
+and to other instances of the same container
+
+as a container tasks can be created to make changes to the container
+
+for instance; a folder full of videos can be coded to auto-convert the
+video files to mp4.  the files will then be copied to a task and
+the task will do the conversion and copy the new file back
+
+a folder can be tagged local-temp so that the local copy will be removed when
+it is completely copied to some storage service.
+
+tagging a folder 'download' would cause jobs to wait for files to be constant
+for some time before copying them out.  plus they would stay local for a period
+of time before they are removed.

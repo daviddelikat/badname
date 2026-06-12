@@ -1,0 +1,5 @@
+
+iso files are considered containers but are maintained in their original format.
+
+if desired they can be mounted for analysis or processing...
+mostly they will be handled like a single file.

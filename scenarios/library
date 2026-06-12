@@ -1,0 +1,7 @@
+
+a library is a specialized container. it can span multiple folders and physical
+storage devices.  a library has a indexes.
+
+first index gives a list of storage devices that participate in the library
+second index is a list of entries in the library and what devices the entries
+are stored in.

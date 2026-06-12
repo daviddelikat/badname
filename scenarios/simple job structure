@@ -1,0 +1,33 @@
+
+every job will have a series of directories which will be handled by the
+job control system.
+
+jcl      # job control data
+job      # job data/input and parameters
+session  # session data
+working  # store intermediate files here; deleted when the job completes successfully
+input    # any files specific to a task go here, particularly large files.
+output   # the results go here, specifically files that go back to the origin.
+tools    # custom tools will be added here, any non-standard programs (ffmpeg,yt-dlp,wget...)
+log      # create log files here also core dumps or any other debug info
+
+special commands will be available to create log files and record events, resource usage.
+and process status/state.
+the data created will be stored in the log directory.
+state and status will also be stored in the job and session directories
+
+job, session and log directories will be synchronized continuously with central storage
+jcl, tools and input are read only
+working is temporary. it will not be maintained if the system crashes.
+
+
+where possible use integrated sync tools like glusterfs or nfs.  if not use an
+automated mechanism like named pipes to ensure that content is successfully
+written to remote storage. [ maybe use a custom file system? ]
+
+create tools for managing logs where the output of a command can be excessive and
+may contain control chars to manipulate the user viewable content.
+
+other tools should be available to run commands periodically to evaluate status
+in order to maintain progress indicators for running processes.
+this includes estimating total run time and calculating task completion.

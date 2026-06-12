@@ -1,0 +1,12 @@
+
+plain text files with no identifying extension will be processed through a series
+of filters to identify any data that matches a format as well as pull out tags,
+keys and properties.
+
+- tags are self identified based on format and similar to the value of a property
+- keys are system identified and provide some identity without  a special value
+- properties are system defined keys with a value, though the value maybe true or
+    false and may be specified by the presence of the key ( in which case lack
+    of presence means undefined not false )
+
+text processing can be done in a custom session that handles all initial text files
