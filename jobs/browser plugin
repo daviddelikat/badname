@@ -1,0 +1,9 @@
+
+text begins with 'chrome-extension://<some-id>/'
+
+look for title and url parameters
+
+what to do if no url/title are found?
+
+run a url-update with the original text in the context
+maybe put it as alt-id...

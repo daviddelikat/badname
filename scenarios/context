@@ -1,0 +1,13 @@
+
+context is a small structure of data that provides additional info that
+can help organize the data it connects to.
+
+this will include any date/time info associated with the source.
+created, modified, etc.
+
+also included is the id of the creating entity or source of the text.
+
+the text of the source will be summarized with three specific actions:
+1. certain words will be removed ( see a typical deleted words list )
+2. repeated words will be highlighted
+3. targeted words will be highlighted ( there will be a list )
