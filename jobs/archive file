@@ -1,0 +1,7 @@
+
+extract files from the archive.
+
+extensions:  tar zip tgz tgx
+
+try to check the uncompressed file size before extracting
+abend if there may not be enough room for extraction
