@@ -1,0 +1,7 @@
+
+when an item gets marked 'purge' [ maybe this is a tag? ]
+
+then all data is removed.  any identifying data is held for a
+period to ensure that any related data in other systems gets purged
+also.  maybe keep the main id forever?  but maybe only keep it for
+some time after the last sighting...

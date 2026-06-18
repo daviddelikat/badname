@@ -6,3 +6,6 @@ title
 context
 
 run url-update which will create or update the url based on the data
+
+have a list of hosts that never get added to the system.
+if a host gets added to the list then existing urls shoudl be marked to purged
