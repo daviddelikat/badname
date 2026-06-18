@@ -1,0 +1,21 @@
+
+this job looks at the input content and determines what to do next...
+the input directory shoudl have a random file which will be examined
+to determine next steps.
+
+first check for normal stuff like compressed data or archives
+
+then look for specific names and extensions that identify content/process
+
+finally check the contents of the file to see what hints may be...
+use the 'file' command to determine content type, then look for
+other hints.  research 'file' results and map as many as possible.
+
+look for 'https?:' 's?ftps?:' 'gopher:' and other url schemas; is it one url or
+a bunch of them?
+'----' on a line by itself is probably an 'x' formatted file.
+
+does it look like email?
+
+last option is it is just a pragraph of text; it should be ID'd, tagged, indexed
+and stored

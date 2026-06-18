@@ -1,3 +1,18 @@
 
 process jump cut file
 no need to handle compression, system will handle that
+
+file is xmll; stored in a key-value tree.
+
+<dict><key>jcList</key><array><dict><key>Contents</key><string> ... </string></dict>
+
+may be able to grep file for <string> tags and ignore /NSS.*Type/ matches
+
+ignore short strings that look like passwords
+
+maybe ignore other bits that need to be identified
+
+create text entries for everything else including context from the jumpcut file.
+
+when creating text itmes, add hints from assigned expectations from jumpcut files.
+like for urls, generally they are high priority and likely wanted downloads.

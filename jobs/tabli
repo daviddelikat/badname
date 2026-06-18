@@ -3,3 +3,14 @@ process text files; break text into URL/title/context data and push content into
 
 context should include a date from the source of the data as well as a summary of
 surrounding text
+
+
+--  sample:
+
+### <window title>
+
+Title    |   URL
+---------|-----------
+<title>  | <url>
+
+--  end of sample
