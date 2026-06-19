@@ -1,0 +1,24 @@
+
+design mechanism to transfer data.
+
+there are 2 ways to transfer data.
+
+1. active; the data is directly transfered from one space to another
+    network file transfer
+    local file copy
+2. passive; the file is linked or otherwise connected to the user
+    sshfs; nfs;
+
+one parameter for the transfer indicates read-only or modify-allowed
+this will impact the possible ways to make the move the data.
+
+read only tranfers need to ensure there is no way the original can be modified.
+this can be done using copy with no copy-back; or a link which does not allow
+any modifications.
+
+write-allowed tranfers need to ensure that changes are propigated promptly and that
+no other jobs can modify the data outside the current job unless parallelism is
+enabled.
+
+parallel data can be enabled but all jobs then need to manage locks or some other
+feature to ensure data integrity.
