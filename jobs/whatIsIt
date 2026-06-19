@@ -13,7 +13,7 @@ other hints.  research 'file' results and map as many as possible.
 
 look for 'https?:' 's?ftps?:' 'gopher:' and other url schemas; is it one url or
 a bunch of them?
-'----' on a line by itself is probably an 'x' formatted file.
+if the first four non-blank chars are '----' then it is probably an 'x' formatted file.
 
 does it look like email?
 

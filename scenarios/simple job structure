@@ -17,9 +17,13 @@ the data created will be stored in the log directory.
 state and status will also be stored in the job and session directories
 
 job, session and log directories will be synchronized continuously with central storage
-jcl, tools and input are read only
+jcl, tools and input are read only ( perhaps not enforced, but nothing will be saved )
 working is temporary. it will not be maintained if the system crashes.
-
+the job directory will have some data in it that indicates the task to be performed
+by the current job and the expected content of the output directory.  jobs should
+abend if the expected results parameters are not recognized.  the 'expected'
+parameters should be held in multiple formats so that scripts of various levels
+of sophistication can read them and function.
 
 where possible use integrated sync tools like glusterfs or nfs.  if not use an
 automated mechanism like named pipes to ensure that content is successfully

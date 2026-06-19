@@ -1,0 +1,5 @@
+
+input is a finle with a list or urls, it may have other text in the file.
+
+just extract the individual urls into seperate files and send them on to be
+processed.
