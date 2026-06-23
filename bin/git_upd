@@ -1,4 +1,5 @@
 
+get pull
 git status
 git add .
 git commit -m working
