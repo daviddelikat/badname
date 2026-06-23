@@ -1,0 +1,18 @@
+
+the job execution subsystem should be semi-interactive.
+
+this means that as jobs execute there will be an opportunity to
+examine the process, the errors, the undefined bits and define
+tasks that will handle errors and process data.
+
+in order to provide this I will create a folder that contains
+logs and data that I can browse and edit in order to handle
+problems or undefined elements inthe job system.
+
+I should build a job that interacts with this directory.
+actions will include:
+- rotate logs, probably keep one log for any one repeating job unless it contains an errors
+- abend logs will be held until the abend is resolved.
+- the directory should contain data files ( yaml for easy edit? )
+  these data files will connect log files to jobs and solutions
+- small executable elements that can be run inside job/sessions to resolve issues

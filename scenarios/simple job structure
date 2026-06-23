@@ -35,3 +35,7 @@ may contain control chars to manipulate the user viewable content.
 other tools should be available to run commands periodically to evaluate status
 in order to maintain progress indicators for running processes.
 this includes estimating total run time and calculating task completion.
+[ maybe jobs can have a cron-like feature that runs local commands periodically. ]
+
+while jobs could run in main system space, ideally they would always run in a docker
+container or other contained system...
