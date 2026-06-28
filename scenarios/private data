@@ -1,0 +1,14 @@
+
+all text will get processed by a job that compares it against
+a few lists of patterns and strings that indicate data that should
+be private. each list will have one or more keys, tags or properties
+that will be assigned to content that matches the list.
+
+there must be some balance found in the timeing of this application
+because many jobs will be breaking content into pieces where the whole
+may be tagged for privacy but some of the individuals should not.
+
+likely the best solution here is to apply the tags as early as possible
+but then jobs that split will clear the provacy adssignement for the
+child data items so that they can be re-tested in order to correct
+whole-to-part false positives.

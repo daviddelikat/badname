@@ -1,0 +1,56 @@
+
+# job control system ( alpha stage )
+
+# write the beginnings of the job control system that can start running
+# on mac laptop.
+
+# local jcl config; probably ~/.../jcla/config.ini
+# name of status file; job data directory
+# stage
+# - new - a job name and parameters or a job def/id
+# - init - start initializing job elements
+# - pre-processing - run system jobs to prepare for fulfilment
+# - pre-dependancies - copy remote data, mount remote files, create locks, etc
+# - fulfilment - run all the elements of the job, each step in order and any related tasks
+# - verification - run any executable to verify the results of the job
+# - post-dependancies - copy remote data out, clear locks, archive logs, etc
+# - cleanup - delete temp data
+# - complete - nothing left to do
+# status
+# - wait
+# - running
+# - error
+# - recover
+# - fail
+# -
+# sub-status - implement such that status and sub-status can behave as a single value which
+#           will match multiple values. is sub-status == 'app running' then status == 'running'
+#           and status == 'app running' are both true
+# - wait for dependancies
+# - app running
+# - system running
+# state ( multi-value )
+# - error - something went wrong, recovery can clear error state
+# - fail - recovery had an error, fail cannot be cleared
+# - app errors - errors the application encountered
+# - system errors - system errors that occurred
+# - warnings - warning messages from anywhere
+# - process info - all the processes that ran for this job
+# - current process - the currently running process
+# - current log - the current log
+# - all logs - every log generated for this job
+# - dependncies - all dependancy relationships and status related to this job
+# - dependancy issues - any problem encountered related to dependancies and resolutions
+# - recovery - all recovery processes related to this job
+
+job control scheduling....
+two types: regular and ad-hoc
+regular jobs are scheduled to start based on calendar or other events.
+ad-hoc jobs do not have a schedule.
+ 1. foreign requests ( human or other systems )
+ 2. internal requests - related to some other job
+an instance of a job is created to acomodate the process of executing the programs.
+jobs can be part of a session and or stream, the session defines resources available
+to a set of related jobs, a stream defines a series of interdepandant jobs.
+[ by default use a null session which does not save any session data ]
+[ maybe also have a null stream so that jobs can refer to stream features ]
