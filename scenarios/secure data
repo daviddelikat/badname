@@ -1,0 +1,6 @@
+
+secure data
+
+subset of private; should have additional handling to maintain extra level of
+privacy.   a text blob that appears to containa password or uname/pwd pair
+will get a secure_data tag attached.
