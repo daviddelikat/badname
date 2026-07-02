@@ -1,4 +1,6 @@
 
+cd ~/_/working
+
 git pull
 git status
 git add .
